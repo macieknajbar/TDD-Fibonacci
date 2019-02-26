@@ -6,9 +6,13 @@ import com.gmail.najbar.maciek.tdd.R
 
 class ResultsActivity : AppCompatActivity() {
 
+    private lateinit var calculateFibonacci: CalculateFibonacci
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_results)
+
+        calculateFibonacci.forValue(intent.getIntExtra(EXTRA_NUMBER, 0))
     }
 
     companion object {
