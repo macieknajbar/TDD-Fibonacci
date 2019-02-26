@@ -1,5 +1,6 @@
 package com.gmail.najbar.maciek.tdd
 
+import android.support.test.espresso.Espresso.closeSoftKeyboard
 import android.support.test.espresso.Espresso.onView
 import android.support.test.espresso.action.ViewActions.click
 import android.support.test.espresso.action.ViewActions.typeText
@@ -13,6 +14,7 @@ object MainPage {
     }
 
     fun hitsEnter() {
+        closeSoftKeyboard()
         onView(withId(R.id.enter))
                 .perform(click())
     }
