@@ -1,7 +1,14 @@
 package com.gmail.najbar.maciek.tdd.results.usecase
 
-class CalculateFibonacciImpl : CalculateFibonacci {
-    override fun forValue(number: Int) {
+import com.gmail.najbar.maciek.tdd.utils.fib
 
+class CalculateFibonacciImpl(
+        private val presenter: CalculateFibonacci.Presenter) : CalculateFibonacci {
+
+    override fun forValue(number: Int) {
+        presenter.presentResults(fib(number))
     }
 }
+
+
+

@@ -11,7 +11,7 @@ class CalculateFibonacciImplTest {
 
     @Test fun `presents result to user`() {
         val number = 6
-        val calculateFibonacci = CalculateFibonacciImpl()
+        val calculateFibonacci = CalculateFibonacciImpl(presenter)
 
         calculateFibonacci.forValue(number)
 
