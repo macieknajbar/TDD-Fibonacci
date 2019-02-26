@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <item name="input_number" type="id" />
+    <item name="enter" type="id" />
+    <item name="result" type="id" />
 </resources>
