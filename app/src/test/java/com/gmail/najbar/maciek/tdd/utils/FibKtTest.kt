@@ -9,6 +9,13 @@ class FibKtTest {
         assertEquals(1, fib(1))
     }
 
+    @Test fun `fib 2`() {
+        assertEquals(1, fib(2))
+    }
+
+    @Test fun `fib 3`() {
+        assertEquals(2, fib(3))
+    }
 }
 
 
