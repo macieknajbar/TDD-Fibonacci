@@ -11,7 +11,7 @@ class ShowResultsPresenterTest {
 
     @Test fun `opens results screen`() {
         val number = 7
-        val presenter = ShowResultsPresenter()
+        val presenter = ShowResultsPresenter(view)
 
         presenter.presentResultsScreenFor(number)
 

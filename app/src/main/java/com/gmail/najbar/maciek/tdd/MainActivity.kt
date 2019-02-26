@@ -9,13 +9,13 @@ import com.gmail.najbar.maciek.tdd.usecase.ShowResults
 import com.gmail.najbar.maciek.tdd.usecase.ShowResultsImpl
 import com.gmail.najbar.maciek.tdd.utils.viewId
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), MainContract.ShowResultsView {
 
     private val inputNumber: EditText by viewId { R.id.input_number }
     private val enter: Button by viewId { R.id.enter }
 
     private val showResults: ShowResults =
-            ShowResultsImpl(ShowResultsPresenter())
+            ShowResultsImpl(ShowResultsPresenter(this))
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +25,10 @@ class MainActivity : AppCompatActivity() {
             val number = inputNumber.text.toString().toInt()
             showResults.forValue(number)
         }
+    }
+
+    override fun openResultsFor(number: Int) {
+
     }
 }
 
