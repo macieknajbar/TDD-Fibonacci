@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">TDD</string>
     <string name="calculate">calculate</string>
+    <string name="result_of_fibonacci_equasion_for_d">Result of Fibonacci equasion for %d:</string>
 </resources>
