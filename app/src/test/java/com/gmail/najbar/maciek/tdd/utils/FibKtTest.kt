@@ -16,6 +16,10 @@ class FibKtTest {
     @Test fun `fib 3`() {
         assertEquals(2, fib(3))
     }
+
+    @Test fun `fib 4`() {
+        assertEquals(3, fib(4))
+    }
 }
 
 
