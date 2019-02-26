@@ -3,6 +3,7 @@ package com.gmail.najbar.maciek.tdd.results
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.gmail.najbar.maciek.tdd.R
+import com.gmail.najbar.maciek.tdd.results.usecase.CalculateFibonacci
 
 class ResultsActivity : AppCompatActivity() {
 
